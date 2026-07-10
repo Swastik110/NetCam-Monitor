@@ -543,7 +543,7 @@ export default function Dashboard() {
             <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
               
               {/* PIE CHART */}
-              <div className="bg-slate-900/40 backdrop-blur-xl border border-white/5 rounded-2xl flex flex-col items-center justify-center relative col-span-1 p-8 min-h-[350px] shadow-2xl">
+              <div className="bg-slate-900/40 backdrop-blur-xl border border-white/5 rounded-2xl flex flex-col items-center justify-center relative col-span-1 p-8 min-h-87.5 shadow-2xl">
                 <div className="absolute top-6 left-6 text-slate-500 text-[10px] font-bold tracking-widest uppercase">Grid Health</div>
                 <div className="h-64 w-full mt-6">
                   <ResponsiveContainer width="100%" height="100%">
