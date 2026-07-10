@@ -60,7 +60,7 @@ function Login({ onLoginSuccess }) {
            <img src={logo} alt="Logo" className="w-full h-full object-cover" />
         </div>
         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-slate-100 to-slate-400 tracking-tight flex items-center gap-3">
-          <ShieldCheck className="w-8 h-8 text-cyan-500" /> ENTERPRISE INFRASTRUCTURE MONITOR
+          <ShieldCheck className="w-8 h-8 text-cyan-500" /> NETWORK OPERATION MONITORING SYSTEM
         </h1>
         <p className="text-xs text-slate-500 mt-3 font-mono uppercase tracking-widest">{isRegistering ? 'New Operator Provisioning' : 'Authorized Personnel Only'}</p>
       </div>
