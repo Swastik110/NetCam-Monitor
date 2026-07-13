@@ -7,6 +7,8 @@ const jwt = require('jsonwebtoken');
 
 const connectDB = require('./config/db');
 const startMonitoring = require('./services/pingService');
+const path = require('path');
+
 
 // --- Models ---
 const Nvr = require('./models/Nvr');
@@ -144,3 +146,11 @@ app.get('/api/cameras/:id/history', async (req, res) => {
 io.on('connection', (socket) => { console.log(`💻 NOC Connected: ${socket.id}`); });
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => { console.log(`🚀 NOC Backend running on port ${PORT}`); startMonitoring(io); });
+
+app.use(express.static(path.join(__dirname, '../Frontend/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../Frontend/dist', 'index.html'));
+});
+
+// ... (keep your existing PORT and server.listen here) ...
