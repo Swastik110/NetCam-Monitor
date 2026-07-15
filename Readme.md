@@ -1,4 +1,4 @@
-# 🚀 NetCam Monitor
+# 🚀 Network Monitoring System
 
 > A modern Network Operations Center (NOC) dashboard for real-time monitoring and diagnostics of enterprise surveillance and network infrastructure.
 
